@@ -1,6 +1,12 @@
 {
-  "vendors.css": "/cf-design/static/css/vendors.96f41d355cc4c7346427.css",
-  "vendors.js": "/cf-design/static/js/vendors.a8b3dd3b.js",
-  "app.js": "/cf-design/static/js/app.96f41d355cc4c7346427.js",
+  "vendors.css": "/cf-design/static/css/vendors.9d1a04203387ec61d5dd.css",
+  "vendors.js": "/cf-design/static/js/vendors.35928037.js",
+  "app.js": "/cf-design/static/js/app.9d1a04203387ec61d5dd.js",
+  "src-components-alert-index.css": "/cf-design/static/css/src-components-alert-index.9d1a04203387ec61d5dd.css",
+  "src-components-alert-index.js": "/cf-design/static/js/src-components-alert-index.829099d1.js",
+  "src-components-button-index.css": "/cf-design/static/css/src-components-button-index.9d1a04203387ec61d5dd.css",
+  "src-components-button-index.js": "/cf-design/static/js/src-components-button-index.29199919.js",
+  "src-components-modal-index.css": "/cf-design/static/css/src-components-modal-index.9d1a04203387ec61d5dd.css",
+  "src-components-modal-index.js": "/cf-design/static/js/src-components-modal-index.b3d98ad1.js",
   "index.html": "/cf-design/index.html"
 }
