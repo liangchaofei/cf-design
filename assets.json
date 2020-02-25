@@ -1,12 +1,14 @@
 {
-  "vendors.css": "/cf-design/static/css/vendors.9d1a04203387ec61d5dd.css",
+  "vendors.css": "/cf-design/static/css/vendors.75203ec5cb61a0e583c7.css",
   "vendors.js": "/cf-design/static/js/vendors.35928037.js",
-  "app.js": "/cf-design/static/js/app.9d1a04203387ec61d5dd.js",
-  "src-components-alert-index.css": "/cf-design/static/css/src-components-alert-index.9d1a04203387ec61d5dd.css",
+  "app.js": "/cf-design/static/js/app.75203ec5cb61a0e583c7.js",
+  "src-components-alert-index.css": "/cf-design/static/css/src-components-alert-index.75203ec5cb61a0e583c7.css",
   "src-components-alert-index.js": "/cf-design/static/js/src-components-alert-index.829099d1.js",
-  "src-components-button-index.css": "/cf-design/static/css/src-components-button-index.9d1a04203387ec61d5dd.css",
-  "src-components-button-index.js": "/cf-design/static/js/src-components-button-index.29199919.js",
-  "src-components-modal-index.css": "/cf-design/static/css/src-components-modal-index.9d1a04203387ec61d5dd.css",
-  "src-components-modal-index.js": "/cf-design/static/js/src-components-modal-index.b3d98ad1.js",
+  "src-components-badge-index.css": "/cf-design/static/css/src-components-badge-index.75203ec5cb61a0e583c7.css",
+  "src-components-badge-index.js": "/cf-design/static/js/src-components-badge-index.81214528.js",
+  "src-components-button-index.css": "/cf-design/static/css/src-components-button-index.75203ec5cb61a0e583c7.css",
+  "src-components-button-index.js": "/cf-design/static/js/src-components-button-index.43eedeab.js",
+  "src-components-modal-index.css": "/cf-design/static/css/src-components-modal-index.75203ec5cb61a0e583c7.css",
+  "src-components-modal-index.js": "/cf-design/static/js/src-components-modal-index.e1991708.js",
   "index.html": "/cf-design/index.html"
 }
