@@ -1,0 +1,40 @@
+.cfAlertBox{
+    position: relative;
+    padding: 5px 12px;
+    margin-bottom: 16px;
+    border-radius: 3px;
+    &.cfAlertSuccessStyle{
+        background-color: #f6ffed;
+        border: 1px solid #b7eb8f;
+    }
+    &.cfAlertErrorStyle{
+        background-color: #fff1f0;
+        border: 1px solid #ffa39e;
+    }
+    &.cfAlertInfoStyle{
+        background-color: #e6f7ff;
+        border: 1px solid #91d5ff;
+    }
+    &.cfAlertWarnStyle{
+        background-color: #fffbe6;
+        border: 1px solid #ffe58f;
+    }
+    .cfAlertMsg{
+        margin-bottom: 5px;
+        color: rgba(0, 0, 0, 0.85);
+        line-height: 1.5em;
+    }
+    .cfAlertHelp{
+        color: rgba(0, 0, 0, 0.65);
+        line-height: 1.5em;
+        font-size: 13px;
+        word-break: break-all;
+    }
+    .cfAlertClose{
+        position: absolute;
+        right: 8px;
+        top: 5px;
+        color: rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+    }
+}

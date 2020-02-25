@@ -1,0 +1,54 @@
+{
+  "name": "cf-design",
+  "version": "1.0.3",
+  "description": "轻量级UI组件库",
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "father": "^2.29.2",
+    "pre-commit": "^1.2.2"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.7.1",
+    "babel-plugin-import": "^1.12.2",
+    "braft-editor": "^2.3.8",
+    "jsoneditor": "^8.1.0",
+    "querystring": "^0.2.0",
+    "rc-notification": "^4.0.0-rc.1",
+    "react-icons": "^3.9.0"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "es"
+  ],
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "browserslist": [
+    "last 2 version",
+    "Firefox ESR",
+    "> 1%",
+    "ie >= 9"
+  ],
+  "publishConfig": {
+    "registry": ""
+  },
+  "scripts": {
+    "dev": "npx --max_old_space_size=8096 father doc dev --host 0.0.0.0",
+    "build": "father build",
+    "build:doc": "father doc build",
+    "deploy": "father doc deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liangchaofei/cf-design.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liangchaofei/cf-design/issues"
+  },
+  "homepage": "https://liangchaofei.github.io/cf-design"
+}

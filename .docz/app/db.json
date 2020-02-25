@@ -1,0 +1,329 @@
+{
+  "config": {
+    "title": "cf-design",
+    "description": "轻量级UI组件库",
+    "menu": [],
+    "version": "1.0.2",
+    "repository": false,
+    "native": false,
+    "codeSandbox": true,
+    "themeConfig": {
+      "mode": "light"
+    },
+    "separator": "-",
+    "typescript": true,
+    "theme": "/Users/liangchaofei/Desktop/fe/cf-design/node_modules/docz-theme-umi/es/index.js",
+    "base": "/cf-design",
+    "plugins": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "props": [
+    {
+      "key": "src/components/Modal/index.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MemoExoticComponent",
+          "methods": [],
+          "props": {
+            "afterClose": {
+              "defaultValue": null,
+              "description": "",
+              "name": "afterClose",
+              "required": true,
+              "type": {
+                "name": "any"
+              }
+            },
+            "bodyStyle": {
+              "defaultValue": null,
+              "description": "",
+              "name": "bodyStyle",
+              "required": true,
+              "type": {
+                "name": "object"
+              }
+            },
+            "cancelText": {
+              "defaultValue": null,
+              "description": "",
+              "name": "cancelText",
+              "required": true,
+              "type": {
+                "name": "any"
+              }
+            },
+            "centered": {
+              "defaultValue": null,
+              "description": "",
+              "name": "centered",
+              "required": true,
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "closable": {
+              "defaultValue": null,
+              "description": "",
+              "name": "closable",
+              "required": true,
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "closeIcon": {
+              "defaultValue": null,
+              "description": "",
+              "name": "closeIcon",
+              "required": true,
+              "type": {
+                "name": "any"
+              }
+            },
+            "destroyOnClose": {
+              "defaultValue": null,
+              "description": "",
+              "name": "destroyOnClose",
+              "required": true,
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "footer": {
+              "defaultValue": null,
+              "description": "",
+              "name": "footer",
+              "required": true,
+              "type": {
+                "name": "any"
+              }
+            },
+            "keyboard": {
+              "defaultValue": null,
+              "description": "",
+              "name": "keyboard",
+              "required": true,
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "mask": {
+              "defaultValue": null,
+              "description": "",
+              "name": "mask",
+              "required": true,
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "maskclosable": {
+              "defaultValue": null,
+              "description": "",
+              "name": "maskclosable",
+              "required": true,
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "maskStyle": {
+              "defaultValue": null,
+              "description": "",
+              "name": "maskStyle",
+              "required": true,
+              "type": {
+                "name": "any"
+              }
+            },
+            "okText": {
+              "defaultValue": null,
+              "description": "",
+              "name": "okText",
+              "required": true,
+              "type": {
+                "name": "any"
+              }
+            },
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "required": true,
+              "type": {
+                "name": "any"
+              }
+            },
+            "visible": {
+              "defaultValue": null,
+              "description": "",
+              "name": "visible",
+              "required": true,
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "width": {
+              "defaultValue": null,
+              "description": "",
+              "name": "width",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "onCancel": {
+              "defaultValue": null,
+              "description": "",
+              "name": "onCancel",
+              "required": true,
+              "type": {
+                "name": "any"
+              }
+            },
+            "onOk": {
+              "defaultValue": null,
+              "description": "",
+              "name": "onOk",
+              "required": true,
+              "type": {
+                "name": "any"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "key": "src/components/Badge/index.mdx",
+      "value": {
+        "name": "Badge",
+        "route": "/cf-design/Badge",
+        "order": 8,
+        "sidebar": true,
+        "id": "2c481fb2b5fbda3eff1ab8a56aecaeb1",
+        "filepath": "src/components/Badge/index.mdx",
+        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Badge/index.mdx",
+        "slug": "src-components-badge-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "badge",
+            "depth": 1,
+            "value": "Badge"
+          },
+          {
+            "slug": "默认",
+            "depth": 4,
+            "value": "默认"
+          },
+          {
+            "slug": "设置overflowcount，展示封顶的数字",
+            "depth": 4,
+            "value": "设置overflowCount，展示封顶的数字"
+          },
+          {
+            "slug": "只展示一个小圆点",
+            "depth": 4,
+            "value": "只展示一个小圆点"
+          },
+          {
+            "slug": "展示指示状态",
+            "depth": 4,
+            "value": "展示指示状态"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/Button/index.mdx",
+      "value": {
+        "name": "Button",
+        "route": "/cf-design/Button",
+        "order": 8,
+        "sidebar": true,
+        "id": "a08e664b64d63394cab05b2e5d624522",
+        "filepath": "src/components/Button/index.mdx",
+        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Button/index.mdx",
+        "slug": "src-components-button-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "button",
+            "depth": 1,
+            "value": "Button"
+          },
+          {
+            "slug": "基本用法",
+            "depth": 4,
+            "value": "基本用法"
+          },
+          {
+            "slug": "块按钮block",
+            "depth": 4,
+            "value": "块按钮block"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/Alert/index.mdx",
+      "value": {
+        "name": "Alert",
+        "route": "/cf-design/Alert",
+        "order": 8,
+        "sidebar": true,
+        "id": "1b9b1f0ef540b3446cb2399e02278174",
+        "filepath": "src/components/Alert/index.mdx",
+        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Alert/index.mdx",
+        "slug": "src-components-alert-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "modal",
+            "depth": 1,
+            "value": "Modal"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/Modal/index.mdx",
+      "value": {
+        "name": "Modal",
+        "route": "/cf-design/Modal",
+        "order": 8,
+        "sidebar": true,
+        "id": "d9fb2dc690c6d7365b12fe5e88af45f9",
+        "filepath": "src/components/Modal/index.mdx",
+        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Modal/index.mdx",
+        "slug": "src-components-modal-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "modal",
+            "depth": 1,
+            "value": "Modal"
+          },
+          {
+            "slug": "使用介绍",
+            "depth": 2,
+            "value": "使用介绍"
+          },
+          {
+            "slug": "api文档",
+            "depth": 2,
+            "value": "API文档"
+          }
+        ]
+      }
+    }
+  ]
+}

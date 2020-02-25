@@ -1,0 +1,40 @@
+---
+name: Badge
+route: /Badge
+order: 8
+sidebar: true
+---
+
+import { Playground } from 'docz'
+import Badge from './index.tsx'
+
+# Badge
+
+#### 默认
+<Playground>
+    <Badge text="react" count={99} />
+</Playground>
+
+#### 设置overflowCount，展示封顶的数字
+<Playground>
+    <Badge text="react" count={199} overflowCount={99} />
+</Playground>
+
+#### 只展示一个小圆点
+<Playground>
+    <Badge text="react" dot count={1} />
+</Playground>
+
+#### 展示指示状态
+<Playground>
+    <Badge status="success" />
+    <Badge status="warning" />
+    <Badge status="error" />
+    <Badge status="processing" />
+    <Badge status="default" />
+     <br /><br />
+    <Badge status="success" text="成功"></Badge><br />
+    <Badge status="error" text="错误"></Badge><br />
+    <Badge status="processing" text="进行中"></Badge><br />
+    <Badge status="warning" text="警告"></Badge>
+</Playground>

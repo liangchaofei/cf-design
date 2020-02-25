@@ -1,0 +1,40 @@
+.cfAlertBox {
+  position: relative;
+  padding: 5px 12px;
+  margin-bottom: 16px;
+  border-radius: 3px;
+}
+.cfAlertBox.cfAlertSuccessStyle {
+  background-color: #f6ffed;
+  border: 1px solid #b7eb8f;
+}
+.cfAlertBox.cfAlertErrorStyle {
+  background-color: #fff1f0;
+  border: 1px solid #ffa39e;
+}
+.cfAlertBox.cfAlertInfoStyle {
+  background-color: #e6f7ff;
+  border: 1px solid #91d5ff;
+}
+.cfAlertBox.cfAlertWarnStyle {
+  background-color: #fffbe6;
+  border: 1px solid #ffe58f;
+}
+.cfAlertBox .cfAlertMsg {
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.85);
+  line-height: 1.5em;
+}
+.cfAlertBox .cfAlertHelp {
+  color: rgba(0, 0, 0, 0.65);
+  line-height: 1.5em;
+  font-size: 13px;
+  word-break: break-all;
+}
+.cfAlertBox .cfAlertClose {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+  color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}

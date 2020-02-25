@@ -1,0 +1,35 @@
+---
+name: Alert
+route: /Alert
+order: 8
+sidebar: true
+---
+
+import { Playground } from 'docz'
+import Alert from './index.tsx'
+
+# Modal
+
+<Playground>
+    <p>默认</p>
+    <Alert type="success" closable/>
+</Playground>
+
+<Playground>
+    <p>可关闭</p>
+    <Alert type="success" closable={true} />
+</Playground>
+
+<Playground>
+    <p>主题类型</p>
+    <Alert type="success" />
+    <Alert type="error" />
+    <Alert type="info" />
+    <Alert type="warn" />
+</Playground>
+
+<Playground>
+    <p>配置辅助性文字</p>
+    <Alert type="success" description="我是辅助" />
+    <Alert type="error" description="我是辅助" closable={true} />
+</Playground>

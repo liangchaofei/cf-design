@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+      "baseUrl": "src",
+      "paths": {
+        "@/*": [
+          "*"
+        ],
+        "@console/*": [
+          "apps/console/*"
+        ]
+      },
+      "target": "es5",
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+      ],
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "noImplicitAny": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "jsx": "react",
+      "allowJs": false,
+      "skipLibCheck": true,
+      "downlevelIteration": true
+    },
+    "include": [
+      "src"
+    ]
+  }

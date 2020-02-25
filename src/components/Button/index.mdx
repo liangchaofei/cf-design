@@ -1,0 +1,33 @@
+---
+name: Button
+route: /Button
+order: 8
+sidebar: true
+---
+
+import { Playground } from 'docz'
+import Button from './index.tsx'
+
+# Button
+
+#### 基本用法
+<Playground>
+    <Button>按钮</Button><br />
+    <Button type="primary">按钮</Button><br />
+    <Button type="warning">按钮</Button><br />
+    <Button type="info">按钮</Button><br />
+    <Button type="pure">按钮</Button><br />
+</Playground>
+
+
+#### 块按钮block
+<Playground>
+    <div style={{width: '360px'}}>
+        <Button block>按钮</Button><br />
+        <Button type="primary" block>按钮</Button><br />
+        <Button type="warning" block>按钮</Button><br />
+        <Button type="info" block>按钮</Button><br />
+        <Button type="pure" block>按钮</Button><br />
+        <Button type="primary" shape="circle" block>按钮</Button><br />
+    </div>
+</Playground>
