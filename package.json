@@ -1,6 +1,6 @@
 {
   "name": "cf-design",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "轻量级UI组件库",
   "peerDependencies": {
     "react": "16.x"
@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.7.1",
+    "@types/classnames": "^2.2.9",
     "babel-plugin-import": "^1.12.2",
     "braft-editor": "^2.3.8",
+    "classnames": "^2.2.6",
     "jsoneditor": "^8.1.0",
     "querystring": "^0.2.0",
     "rc-notification": "^4.0.0-rc.1",

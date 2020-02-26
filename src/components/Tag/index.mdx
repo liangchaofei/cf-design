@@ -1,0 +1,25 @@
+---
+name: Tag
+route: /Tag
+order: 8
+sidebar: true
+---
+
+import { Playground } from 'docz'
+import Tag from './index.tsx'
+
+# Tag
+
+#### 基本使用
+<Playground>
+    <Tag color="#000" closable />
+    <Tag color="#aaa" closable />
+    <Tag color="green" closable text="121222222" />
+    <Tag color="green" closable text='222' />
+</Playground>
+
+
+#### 关闭时的回调
+<Playground>
+    <Tag color="green" closable onClose={() => {alert('tag关闭')}} />
+</Playground>

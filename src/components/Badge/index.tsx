@@ -31,7 +31,7 @@ const Badge = React.memo((props: IProps) => {
                 </div> :
                     <div>
                         <span
-                            className={`badge ${dot ? 'badgeDot' : ''}`}
+                            className={`badge  ${dot ? 'badgeDot' : ''}`}
                             style={{
                                 right: offset ? offset[0] + 'px' : '',
                                 top: offset ? offset[1] + 'px' : '',

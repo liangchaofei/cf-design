@@ -3,7 +3,7 @@
     "title": "cf-design",
     "description": "轻量级UI组件库",
     "menu": [],
-    "version": "1.0.2",
+    "version": "1.0.3",
     "repository": false,
     "native": false,
     "codeSandbox": true,
@@ -202,6 +202,27 @@
   ],
   "entries": [
     {
+      "key": "src/components/Alert/index.mdx",
+      "value": {
+        "name": "Alert",
+        "route": "/cf-design/Alert",
+        "order": 8,
+        "sidebar": true,
+        "id": "1b9b1f0ef540b3446cb2399e02278174",
+        "filepath": "src/components/Alert/index.mdx",
+        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Alert/index.mdx",
+        "slug": "src-components-alert-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "modal",
+            "depth": 1,
+            "value": "Modal"
+          }
+        ]
+      }
+    },
+    {
       "key": "src/components/Badge/index.mdx",
       "value": {
         "name": "Badge",
@@ -243,6 +264,37 @@
       }
     },
     {
+      "key": "src/components/Modal/index.mdx",
+      "value": {
+        "name": "Modal",
+        "route": "/cf-design/Modal",
+        "order": 8,
+        "sidebar": true,
+        "id": "d9fb2dc690c6d7365b12fe5e88af45f9",
+        "filepath": "src/components/Modal/index.mdx",
+        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Modal/index.mdx",
+        "slug": "src-components-modal-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "modal",
+            "depth": 1,
+            "value": "Modal"
+          },
+          {
+            "slug": "使用介绍",
+            "depth": 2,
+            "value": "使用介绍"
+          },
+          {
+            "slug": "api文档",
+            "depth": 2,
+            "value": "API文档"
+          }
+        ]
+      }
+    },
+    {
       "key": "src/components/Button/index.mdx",
       "value": {
         "name": "Button",
@@ -274,53 +326,32 @@
       }
     },
     {
-      "key": "src/components/Alert/index.mdx",
+      "key": "src/components/Tag/index.mdx",
       "value": {
-        "name": "Alert",
-        "route": "/cf-design/Alert",
+        "name": "Tag",
+        "route": "/cf-design/Tag",
         "order": 8,
         "sidebar": true,
-        "id": "1b9b1f0ef540b3446cb2399e02278174",
-        "filepath": "src/components/Alert/index.mdx",
-        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Alert/index.mdx",
-        "slug": "src-components-alert-index",
+        "id": "69e74b10cd9ebd6eb87a93943d8f237c",
+        "filepath": "src/components/Tag/index.mdx",
+        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Tag/index.mdx",
+        "slug": "src-components-tag-index",
         "menu": "",
         "headings": [
           {
-            "slug": "modal",
+            "slug": "tag",
             "depth": 1,
-            "value": "Modal"
-          }
-        ]
-      }
-    },
-    {
-      "key": "src/components/Modal/index.mdx",
-      "value": {
-        "name": "Modal",
-        "route": "/cf-design/Modal",
-        "order": 8,
-        "sidebar": true,
-        "id": "d9fb2dc690c6d7365b12fe5e88af45f9",
-        "filepath": "src/components/Modal/index.mdx",
-        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Modal/index.mdx",
-        "slug": "src-components-modal-index",
-        "menu": "",
-        "headings": [
-          {
-            "slug": "modal",
-            "depth": 1,
-            "value": "Modal"
+            "value": "Tag"
           },
           {
-            "slug": "使用介绍",
-            "depth": 2,
-            "value": "使用介绍"
+            "slug": "基本使用",
+            "depth": 4,
+            "value": "基本使用"
           },
           {
-            "slug": "api文档",
-            "depth": 2,
-            "value": "API文档"
+            "slug": "关闭时的回调",
+            "depth": 4,
+            "value": "关闭时的回调"
           }
         ]
       }

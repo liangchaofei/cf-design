@@ -1,8 +1,8 @@
 <!--
  * @Author: your name
  * @Date: 2020-02-22 22:01:08
- * @LastEditTime: 2020-02-25 19:12:03
- * @LastEditors: your name
+ * @LastEditTime: 2020-02-26 11:32:29
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /cf-design/README.md
  -->
@@ -15,7 +15,7 @@ cf-design是笔者开发的基于react的轻量级组件库，目前不依赖任
 * Button 按钮组件
 * Badge 徽标数组件
 * Alert 警告提示组件
-* Progress 进度条组件
+* Tag 标签组件
 * Modal 轻量实用的模态窗组件
 
 

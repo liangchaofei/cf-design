@@ -26,7 +26,7 @@ var Badge = React.memo(function (props) {
       backgroundColor: color || colorArr[status] || colorArr.default
     }
   }), text) : React.createElement("div", null, React.createElement("span", {
-    className: "badge " + (dot ? 'badgeDot' : ''),
+    className: "badge  " + (dot ? 'badgeDot' : ''),
     style: {
       right: offset ? offset[0] + 'px' : '',
       top: offset ? offset[1] + 'px' : '',
