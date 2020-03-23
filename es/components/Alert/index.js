@@ -1,3 +1,19 @@
+var __assign = this && this.__assign || function () {
+  __assign = Object.assign || function (t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+      s = arguments[i];
+
+      for (var p in s) {
+        if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+      }
+    }
+
+    return t;
+  };
+
+  return __assign.apply(this, arguments);
+};
+
 var __read = this && this.__read || function (o, n) {
   var m = typeof Symbol === "function" && o[Symbol.iterator];
   if (!m) return o;
@@ -30,14 +46,15 @@ import "./index.css";
 var useState = React.useState,
     useEffect = React.useEffect;
 var Alert = React.memo(function (props) {
-  var type = props.type,
-      _a = props.closable,
-      closable = _a === void 0 ? false : _a,
-      _b = props.message,
-      message = _b === void 0 ? '内容' : _b,
+  var _a = props.type,
+      type = _a === void 0 ? 'warn' : _a,
+      _b = props.closable,
+      closable = _b === void 0 ? false : _b,
+      message = props.message,
       description = props.description,
       closeText = props.closeText,
-      onClose = props.onClose;
+      onClose = props.onClose,
+      style = props.style;
 
   var _c = __read(useState(true), 2),
       visible = _c[0],
@@ -77,9 +94,9 @@ var Alert = React.memo(function (props) {
   }, [typeStyle]);
   return React.createElement("div", {
     className: "cfAlertBox " + typeStyle,
-    style: {
+    style: __assign({
       display: visible ? "block" : "none"
-    }
+    }, style)
   }, React.createElement("div", {
     className: "cfAlertMsg"
   }, message), React.createElement("div", {

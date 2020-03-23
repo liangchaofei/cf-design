@@ -10,6 +10,7 @@ import Badge from './index.tsx'
 
 # Badge
 
+## 展示
 #### 默认
 <Playground>
     <Badge text="react" count={99} />
@@ -36,5 +37,30 @@ import Badge from './index.tsx'
     <Badge status="success" text="成功"></Badge><br />
     <Badge status="error" text="错误"></Badge><br />
     <Badge status="processing" text="进行中"></Badge><br />
-    <Badge status="warning" text="警告"></Badge>
+    <Badge status="warning" text="警告"></Badge><br />
+    <Badge status="default" text="默认"></Badge><br />
 </Playground>
+
+
+## 用法
+
+``` js
+import { Badge } from 'cf-design'
+
+// 导入
+<Badge />
+```
+
+
+## API文档
+|  参数  |  说明  |  类型  |  默认值  |
+|  ---   |  ---  |  ---  |  ---  |
+|  style |  更改badge样式  |  object  |  |
+|  color |  自定义小圆点的颜色  |  string  |  'red'  |
+|  count |  展示的数字  |  number  |  0  |
+|  dot |  不展示数字,只展示一个小圆点  |  boolean  |  false  |
+|  offset |  设置状态点的偏移  |  array  |    |
+|  overflowCount |  展示封顶的数字  |  number  |    |
+|  showZero |  当数值为0时是否展示Badge  |  boolean  |  false  |
+|  status |  设置badge为状态点, 类型有success,warning,error,default,processing  |  string  |  'default'  |
+|  text |  当设置status时状态点的文本  |  string  |    |

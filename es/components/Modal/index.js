@@ -25,10 +25,11 @@ var __read = this && this.__read || function (o, n) {
   return ar;
 };
 
-import React from 'react';
+import { useState, useEffect } from 'react';
+import Button from '../Button';
+import Icon from '../Icon';
 import "./index.css";
-var useState = React.useState,
-    useEffect = React.useEffect;
+import React from 'react';
 var hiddenCount = 0;
 var Modal = React.memo(function (props) {
   var afterClose = props.afterClose,
@@ -64,17 +65,34 @@ var Modal = React.memo(function (props) {
 
   var _j = __read(useState(false), 2),
       destroyChild = _j[0],
-      setDestoryChild = _j[1];
+      setDestroyChild = _j[1];
+
+  var hiddenModal = function hiddenModal(cb) {
+    setHidden(function () {
+      cb && cb();
+      return true;
+    });
+
+    if (destroyOnClose) {
+      setDestroyChild(true);
+    }
+
+    document.body.style.overflow = 'auto';
+  };
 
   var handleClose = function handleClose() {
     hiddenModal(onCancel);
   };
 
-  useEffect(function () {
-    if (visible && destroyOnClose) {
-      setDestoryChild(true);
-    }
-  }, [visible, destroyOnClose]);
+  var handleOk = function handleOk() {
+    hiddenModal(onOk);
+  };
+
+  var toggle = function toggle() {
+    setHidden(function (prev) {
+      return !prev;
+    });
+  };
 
   var closeModal = function closeModal(event) {
     var e = event || window.event || arguments.callee.caller.arguments[0];
@@ -84,12 +102,6 @@ var Modal = React.memo(function (props) {
     }
   };
 
-  useEffect(function () {
-    document.addEventListener('keydown', closeModal, false);
-    return function () {
-      document.removeEventListener('keydown', closeModal, false);
-    };
-  }, []);
   useEffect(function () {
     if (isHidden && hiddenCount) {
       hiddenCount = 0;
@@ -103,25 +115,19 @@ var Modal = React.memo(function (props) {
       document.body.style.overflow = 'hidden';
     }
   }, [isHidden]);
-
-  var hiddenModal = function hiddenModal(cb) {
-    setHidden(function () {
-      cb && cb();
-      return true;
-    });
-
-    if (destroyOnClose) {
-      setDestoryChild(true);
+  useEffect(function () {
+    if (visible) {
+      if (destroyOnClose) {
+        setDestroyChild(true);
+      }
     }
-
-    document.body.style.overflow = 'auto';
-  }; // 成功回调
-
-
-  var handleOk = function handleOk() {
-    hiddenModal(true);
-  };
-
+  }, [visible, destroyOnClose]);
+  useEffect(function () {
+    keyboard && document.addEventListener('keydown', closeModal, false);
+    return function () {
+      keyboard && document.removeEventListener('keydown', closeModal, false);
+    };
+  }, []);
   return React.createElement("div", {
     className: "xModalWrap",
     style: {
@@ -137,23 +143,28 @@ var Modal = React.memo(function (props) {
   }, React.createElement("div", {
     className: "xModalTitle"
   }, title)), closable && React.createElement("span", {
-    className: "xModalCloseBtn"
-  }, closeIcon), React.createElement("div", {
+    className: "xModalCloseBtn",
+    onClick: handleClose
+  }, closeIcon || React.createElement(Icon, {
+    type: "FaTimes"
+  })), React.createElement("div", {
     className: "xModalBody",
     style: bodyStyle
   }, destroyChild ? null : children), footer === null ? null : React.createElement("div", {
     className: "xModalFooter"
   }, footer ? footer : React.createElement("div", {
     className: "xFooterBtn"
-  }, React.createElement("div", {
+  }, React.createElement(Button, {
     className: "xFooterBtnCancel",
-    onClick: handleClose
-  }, cancelText), React.createElement("div", {
+    onClick: handleClose,
+    type: "pure"
+  }, cancelText), React.createElement(Button, {
     className: "xFooterBtnOk",
     onClick: handleOk
   }, okText)))), mask && React.createElement("div", {
     className: "xModalMask",
     style: maskStyle,
+    // @ts-ignore
     onClick: maskclosable && handleClose
   }));
 });

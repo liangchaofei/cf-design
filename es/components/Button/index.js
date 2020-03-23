@@ -5,9 +5,10 @@ var Button = React.memo(function (props) {
       onClick = props.onClick,
       type = props.type,
       shape = props.shape,
-      block = props.block;
+      block = props.block,
+      className = props.className;
   return React.createElement("div", {
-    className: "cfBtn ripple " + type + " " + shape + " " + (block ? 'block' : ''),
+    className: "cfBtn ripple " + type + " " + shape + " " + (block === true ? 'block' : '') + " " + className,
     onClick: onClick
   }, children);
 });

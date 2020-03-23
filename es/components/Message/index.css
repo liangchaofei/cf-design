@@ -1,0 +1,26 @@
+.cfMessage {
+  display: flex;
+  padding: 6px;
+  align-items: center;
+}
+.cfMessage .iconWrap {
+  width: 36px;
+  display: inherit;
+  font-size: 16px;
+}
+.cfMessage .iconWrap.info {
+  color: #1890ff;
+}
+.cfMessage .iconWrap.success {
+  color: #52c41a;
+}
+.cfMessage .iconWrap.warning {
+  color: #faad14;
+}
+.cfMessage .iconWrap.error {
+  color: #f5222d;
+}
+.cfMessage .cfNoticeTitle {
+  font-size: 16px;
+  font-weight: 500;
+}

@@ -1,0 +1,58 @@
+---
+name: Progress
+route: /Progress
+order: 8
+sidebar: true
+---
+
+import { Playground } from 'docz'
+import Progress from './index.tsx'
+
+# Progress
+
+#### 基本用法
+
+<Playground>
+    <Progress themeColor="red" percent={50}  /><br />
+    <Progress themeColor="blue" percent={80}  /><br />
+</Playground>
+
+#### 隐藏进度文本
+
+<Playground>
+    <Progress themeColor="red" percent={50}  /><br />
+    <Progress themeColor="blue" percent={80} hiddenText  /><br />
+</Playground>
+
+
+#### 设置进度状态阈值
+根据不同的进度展示不同的进度条颜色，此案例分为20， 50， 80挡
+
+<Playground>
+    <Progress percent={19} statusScope={[[20, 'red'], [50, 'orange'], [80, '#06f']]} /><br />
+    <Progress percent={40} statusScope={[[20, 'red'], [50, 'orange'], [80, '#06f']]} /><br />
+    <Progress percent={90} statusScope={[[20, 'red'], [50, 'orange'], [80, '#06f']]} />
+</Playground>
+
+
+## 用法
+
+``` js
+import { Progress } from 'cf-design'
+
+// 导入
+<Progress percent={50} />
+<Progress percent={40} width={300} hiddenText themeColor="green" />
+<Progress percent={90} statusScope={[[20, 'red'], [50, 'orange'], [80, '#06f']]} />
+```
+
+## API文档
+|  参数  |  说明  |  类型  |  默认值  |
+|  ---   |  ---  |  ---  |  ---  |
+|  themeColor  |  进度条的颜色  |  string  |  '#06f'  |
+|  percent  |  进度值百分比  |  number  |    |
+|  autoHidden  |  是否进度到100%时自动消失  |  bool  |  false  |
+|  hiddenText  |  是否影藏进度条文本  |  bool  |  false  |
+|  width  |  进度条的宽度  |  string|number  |  320 |
+|  textColor  |  进度文本颜色  |  string  |  '#666'  |
+|  statusScope  |  状态阈值,分别设置不同进度范围的进度条颜色,最大允许设置3个值, 为一个二维数组  |  array  |    |

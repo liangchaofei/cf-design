@@ -9,6 +9,7 @@ import { Playground } from 'docz'
 import Button from './index.tsx'
 
 # Button
+## 展示
 
 #### 基本用法
 <Playground>
@@ -31,3 +32,21 @@ import Button from './index.tsx'
         <Button type="primary" shape="circle" block>按钮</Button><br />
     </div>
 </Playground>
+
+## 用法
+
+``` js
+import { Button } from 'cf-design'
+
+// 导入
+<Button />
+```
+
+## API文档
+|  参数  |  说明  |  类型  |  默认值  |
+|  ---   |  ---  |  ---  |  ---  |
+|  className  |  自定义类名  |  string  |  |
+|  type  |  按钮类型 primary,warning, info, default, pure  |  string  |  default  |
+|  shape  |  按钮形状circle ,radius(默认)  |  string  |  radius  |
+|  block  |  是否是块状  |  boolean  |  false  |
+|  onClick  |  按钮点击事件  |  (event) => void  |  |

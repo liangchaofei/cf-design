@@ -3,7 +3,7 @@
     "title": "cf-design",
     "description": "轻量级UI组件库",
     "menu": [],
-    "version": "1.0.3",
+    "version": "1.0.9",
     "repository": false,
     "native": false,
     "codeSandbox": true,
@@ -39,7 +39,7 @@
               "name": "afterClose",
               "required": true,
               "type": {
-                "name": "any"
+                "name": "() => void"
               }
             },
             "bodyStyle": {
@@ -48,7 +48,7 @@
               "name": "bodyStyle",
               "required": true,
               "type": {
-                "name": "object"
+                "name": "any"
               }
             },
             "cancelText": {
@@ -57,7 +57,7 @@
               "name": "cancelText",
               "required": true,
               "type": {
-                "name": "any"
+                "name": "string"
               }
             },
             "centered": {
@@ -93,7 +93,7 @@
               "name": "destroyOnClose",
               "required": true,
               "type": {
-                "name": "boolean"
+                "name": "any"
               }
             },
             "footer": {
@@ -111,7 +111,7 @@
               "name": "keyboard",
               "required": true,
               "type": {
-                "name": "boolean"
+                "name": "any"
               }
             },
             "mask": {
@@ -147,7 +147,7 @@
               "name": "okText",
               "required": true,
               "type": {
-                "name": "any"
+                "name": "string"
               }
             },
             "title": {
@@ -215,9 +215,213 @@
         "menu": "",
         "headings": [
           {
-            "slug": "modal",
+            "slug": "alert",
             "depth": 1,
-            "value": "Modal"
+            "value": "Alert"
+          },
+          {
+            "slug": "展示",
+            "depth": 2,
+            "value": "展示"
+          },
+          {
+            "slug": "默认",
+            "depth": 4,
+            "value": "默认"
+          },
+          {
+            "slug": "可关闭",
+            "depth": 4,
+            "value": "可关闭"
+          },
+          {
+            "slug": "主题类型",
+            "depth": 4,
+            "value": "主题类型"
+          },
+          {
+            "slug": "配置辅助性文字",
+            "depth": 4,
+            "value": "配置辅助性文字"
+          },
+          {
+            "slug": "用法",
+            "depth": 2,
+            "value": "用法"
+          },
+          {
+            "slug": "api文档",
+            "depth": 2,
+            "value": "API文档"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/Button/index.mdx",
+      "value": {
+        "name": "Button",
+        "route": "/cf-design/Button",
+        "order": 8,
+        "sidebar": true,
+        "id": "a08e664b64d63394cab05b2e5d624522",
+        "filepath": "src/components/Button/index.mdx",
+        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Button/index.mdx",
+        "slug": "src-components-button-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "button",
+            "depth": 1,
+            "value": "Button"
+          },
+          {
+            "slug": "展示",
+            "depth": 2,
+            "value": "展示"
+          },
+          {
+            "slug": "基本用法",
+            "depth": 4,
+            "value": "基本用法"
+          },
+          {
+            "slug": "块按钮block",
+            "depth": 4,
+            "value": "块按钮block"
+          },
+          {
+            "slug": "用法",
+            "depth": 2,
+            "value": "用法"
+          },
+          {
+            "slug": "api文档",
+            "depth": 2,
+            "value": "API文档"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/Empty/index.mdx",
+      "value": {
+        "name": "Empty",
+        "route": "/cf-design/Empty",
+        "order": 8,
+        "sidebar": true,
+        "id": "20a923150d697bc8e1414a87ea00c46d",
+        "filepath": "src/components/Empty/index.mdx",
+        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Empty/index.mdx",
+        "slug": "src-components-empty-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "empty",
+            "depth": 1,
+            "value": "Empty"
+          },
+          {
+            "slug": "展示",
+            "depth": 2,
+            "value": "展示"
+          },
+          {
+            "slug": "基本用法",
+            "depth": 2,
+            "value": "基本用法"
+          },
+          {
+            "slug": "api文档",
+            "depth": 2,
+            "value": "API文档"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/Home/index.mdx",
+      "value": {
+        "name": "cf-design介绍",
+        "route": "/cf-design/",
+        "order": 0,
+        "sidebar": true,
+        "id": "2117acc826851f94875459a69e7dac9c",
+        "filepath": "src/components/Home/index.mdx",
+        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Home/index.mdx",
+        "slug": "src-components-home-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "cf-design基于react的轻量级ui组件库",
+            "depth": 1,
+            "value": "cf-design——基于react的轻量级UI组件库"
+          },
+          {
+            "slug": "技术实现与版本",
+            "depth": 1,
+            "value": "技术实现与版本"
+          },
+          {
+            "slug": "使用",
+            "depth": 2,
+            "value": "使用"
+          },
+          {
+            "slug": "安装",
+            "depth": 2,
+            "value": "安装"
+          },
+          {
+            "slug": "使用-1",
+            "depth": 2,
+            "value": "使用"
+          },
+          {
+            "slug": "技术交流与反馈",
+            "depth": 1,
+            "value": "技术交流与反馈"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/Drawer/index.mdx",
+      "value": {
+        "name": "Drawer",
+        "route": "/cf-design/Drawer",
+        "order": 8,
+        "sidebar": true,
+        "id": "ac77a85033908b6ba206a14de5e4c4c9",
+        "filepath": "src/components/Drawer/index.mdx",
+        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Drawer/index.mdx",
+        "slug": "src-components-drawer-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "drawer",
+            "depth": 1,
+            "value": "Drawer"
+          },
+          {
+            "slug": "展示",
+            "depth": 2,
+            "value": "展示"
+          },
+          {
+            "slug": "基本用法",
+            "depth": 4,
+            "value": "基本用法"
+          },
+          {
+            "slug": "用法",
+            "depth": 2,
+            "value": "用法"
+          },
+          {
+            "slug": "api文档",
+            "depth": 2,
+            "value": "API文档"
           }
         ]
       }
@@ -241,6 +445,11 @@
             "value": "Badge"
           },
           {
+            "slug": "展示",
+            "depth": 2,
+            "value": "展示"
+          },
+          {
             "slug": "默认",
             "depth": 4,
             "value": "默认"
@@ -259,6 +468,144 @@
             "slug": "展示指示状态",
             "depth": 4,
             "value": "展示指示状态"
+          },
+          {
+            "slug": "用法",
+            "depth": 2,
+            "value": "用法"
+          },
+          {
+            "slug": "api文档",
+            "depth": 2,
+            "value": "API文档"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/Input/index.mdx",
+      "value": {
+        "name": "Input",
+        "route": "/cf-design/Input",
+        "order": 8,
+        "sidebar": true,
+        "id": "5adca8feb22a358cb0916362bddb2b45",
+        "filepath": "src/components/Input/index.mdx",
+        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Input/index.mdx",
+        "slug": "src-components-input-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "input",
+            "depth": 2,
+            "value": "Input"
+          },
+          {
+            "slug": "input带图标（搜索）",
+            "depth": 2,
+            "value": "Input带图标（搜索）"
+          },
+          {
+            "slug": "自动聚焦",
+            "depth": 2,
+            "value": "自动聚焦"
+          },
+          {
+            "slug": "基本用法",
+            "depth": 2,
+            "value": "基本用法"
+          },
+          {
+            "slug": "api文档",
+            "depth": 2,
+            "value": "API文档"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/Icon/index.mdx",
+      "value": {
+        "name": "Icon",
+        "route": "/cf-design/Icon",
+        "order": 8,
+        "sidebar": true,
+        "id": "d97ebcc738156b6aa4fe4870e6af1d3d",
+        "filepath": "src/components/Icon/index.mdx",
+        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Icon/index.mdx",
+        "slug": "src-components-icon-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "icon",
+            "depth": 1,
+            "value": "Icon"
+          },
+          {
+            "slug": "基本用法",
+            "depth": 4,
+            "value": "基本用法"
+          },
+          {
+            "slug": "更多图标可以在如下界面获得",
+            "depth": 4,
+            "value": "更多图标可以在如下界面获得"
+          },
+          {
+            "slug": "用法",
+            "depth": 2,
+            "value": "用法"
+          },
+          {
+            "slug": "api文档",
+            "depth": 2,
+            "value": "API文档"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/Message/index.mdx",
+      "value": {
+        "name": "Message",
+        "route": "/cf-design/Message",
+        "order": 8,
+        "sidebar": true,
+        "id": "2c646c60192c17fc2415fd55fb996388",
+        "filepath": "src/components/Message/index.mdx",
+        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Message/index.mdx",
+        "slug": "src-components-message-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "drawer",
+            "depth": 1,
+            "value": "Drawer"
+          },
+          {
+            "slug": "基本用法",
+            "depth": 4,
+            "value": "基本用法"
+          },
+          {
+            "slug": "使用",
+            "depth": 2,
+            "value": "使用"
+          },
+          {
+            "slug": "api文档",
+            "depth": 2,
+            "value": "API文档"
+          },
+          {
+            "slug": "message的全局属性",
+            "depth": 3,
+            "value": "Message的全局属性"
+          },
+          {
+            "slug": "notice属性",
+            "depth": 3,
+            "value": "notice属性"
           }
         ]
       }
@@ -295,22 +642,73 @@
       }
     },
     {
-      "key": "src/components/Button/index.mdx",
+      "key": "src/components/Notification/index.mdx",
       "value": {
-        "name": "Button",
-        "route": "/cf-design/Button",
+        "name": "Notification",
+        "route": "/cf-design/Notification",
         "order": 8,
         "sidebar": true,
-        "id": "a08e664b64d63394cab05b2e5d624522",
-        "filepath": "src/components/Button/index.mdx",
-        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Button/index.mdx",
-        "slug": "src-components-button-index",
+        "id": "a3656a7a6e296ae455eeb9ae0ad14632",
+        "filepath": "src/components/Notification/index.mdx",
+        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Notification/index.mdx",
+        "slug": "src-components-notification-index",
         "menu": "",
         "headings": [
           {
-            "slug": "button",
+            "slug": "notification",
             "depth": 1,
-            "value": "Button"
+            "value": "Notification"
+          },
+          {
+            "slug": "1基本使用",
+            "depth": 4,
+            "value": "1.基本使用"
+          },
+          {
+            "slug": "2自定义位置和icon",
+            "depth": 4,
+            "value": "2.自定义位置和icon"
+          },
+          {
+            "slug": "使用",
+            "depth": 2,
+            "value": "使用"
+          },
+          {
+            "slug": "api文档",
+            "depth": 2,
+            "value": "API文档"
+          },
+          {
+            "slug": "notification的全局属性",
+            "depth": 3,
+            "value": "Notification的全局属性"
+          },
+          {
+            "slug": "notice属性",
+            "depth": 3,
+            "value": "notice属性"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/Progress/index.mdx",
+      "value": {
+        "name": "Progress",
+        "route": "/cf-design/Progress",
+        "order": 8,
+        "sidebar": true,
+        "id": "b20e5c7146450ca1762088db2f594f26",
+        "filepath": "src/components/Progress/index.mdx",
+        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Progress/index.mdx",
+        "slug": "src-components-progress-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "progress",
+            "depth": 1,
+            "value": "Progress"
           },
           {
             "slug": "基本用法",
@@ -318,9 +716,70 @@
             "value": "基本用法"
           },
           {
-            "slug": "块按钮block",
+            "slug": "隐藏进度文本",
             "depth": 4,
-            "value": "块按钮block"
+            "value": "隐藏进度文本"
+          },
+          {
+            "slug": "设置进度状态阈值",
+            "depth": 4,
+            "value": "设置进度状态阈值"
+          },
+          {
+            "slug": "用法",
+            "depth": 2,
+            "value": "用法"
+          },
+          {
+            "slug": "api文档",
+            "depth": 2,
+            "value": "API文档"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/Spin/index.mdx",
+      "value": {
+        "name": "Spin",
+        "route": "/cf-design/Spin",
+        "order": 8,
+        "sidebar": true,
+        "id": "8e817ab13f75b78b57a9475978498f92",
+        "filepath": "src/components/Spin/index.mdx",
+        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Spin/index.mdx",
+        "slug": "src-components-spin-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "spin",
+            "depth": 1,
+            "value": "Spin"
+          },
+          {
+            "slug": "基本用法",
+            "depth": 2,
+            "value": "基本用法"
+          },
+          {
+            "slug": "spin改变颜色",
+            "depth": 2,
+            "value": "Spin改变颜色"
+          },
+          {
+            "slug": "spin-line线性加载",
+            "depth": 2,
+            "value": "Spin-line(线性加载)"
+          },
+          {
+            "slug": "基本用法-1",
+            "depth": 2,
+            "value": "基本用法"
+          },
+          {
+            "slug": "api文档",
+            "depth": 2,
+            "value": "API文档"
           }
         ]
       }
@@ -352,6 +811,62 @@
             "slug": "关闭时的回调",
             "depth": 4,
             "value": "关闭时的回调"
+          },
+          {
+            "slug": "使用",
+            "depth": 2,
+            "value": "使用"
+          },
+          {
+            "slug": "api文档",
+            "depth": 2,
+            "value": "API文档"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/Switch/index.mdx",
+      "value": {
+        "name": "Switch",
+        "route": "/cf-design/Switch",
+        "order": 8,
+        "sidebar": true,
+        "id": "06ad9fbc2a1cd76550cae9d807206538",
+        "filepath": "src/components/Switch/index.mdx",
+        "link": "https://github.com/liangchaofei/cf-design/edit/master/src/components/Switch/index.mdx",
+        "slug": "src-components-switch-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "switch",
+            "depth": 1,
+            "value": "Switch"
+          },
+          {
+            "slug": "基本设置",
+            "depth": 4,
+            "value": "基本设置"
+          },
+          {
+            "slug": "控制大小",
+            "depth": 4,
+            "value": "控制大小"
+          },
+          {
+            "slug": "开关文本",
+            "depth": 4,
+            "value": "开关文本"
+          },
+          {
+            "slug": "用法",
+            "depth": 2,
+            "value": "用法"
+          },
+          {
+            "slug": "api文档",
+            "depth": 2,
+            "value": "API文档"
           }
         ]
       }

@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-02-22 22:01:08
- * @LastEditTime: 2020-02-26 11:32:29
+ * @LastEditTime: 2020-03-23 22:51:29
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /cf-design/README.md
@@ -12,15 +12,23 @@ cf-design是笔者开发的基于react的轻量级组件库，目前不依赖任
 如果觉得官网地址访问太慢，可以直接移步github地址：[cf-design——基于react的轻量级UI组件库](https://github.com/liangchaofei/cf-design)
 
 目前已开发完成如下ui组件：
-* Button 按钮组件
-* Badge 徽标数组件
 * Alert 警告提示组件
-* Tag 标签组件
+* Badge 徽标数组件
+* Button 按钮组件
+* Drawer 抽屉组件
+* Empty 空数据组件
+* Icon icon组件
+* Input 输入框组件
 * Modal 轻量实用的模态窗组件
-
+* Notification 通知组件
+* Process 进度条组件
+* Spin 加载中组件
+* Switch 开关组件
+* Tag tag组件
 
 正在开发的组件：
-* Process 进度条组件
+* Checkbox 多选组件
+* Select 选择框组件
 
 后续会开发出更多优质轻量组件，敬请关注。
 
@@ -49,7 +57,6 @@ yarn add cf-design
 ``` jsx
 import { 
   Button,
-  Skeleton,
   Empty,
   Progress,
   Tag,
@@ -83,7 +90,7 @@ export default function() {
       <Alert message="success tip" type="error" />
       <Alert message="success tip" type="info" />
       <Alert message="success tip" type="info" closable />
-      <Alert message="success tip" description="skfjdsalajdfjadkfjaldfhjaskdn你好,欢迎光临" closable type="success" />
+      <Alert message="success tip" description="skfjdsalajdfjadkfja" closable type="success" />
  
     </div>
   )

@@ -1,6 +1,6 @@
 {
   "name": "cf-design",
-  "version": "1.0.4",
+  "version": "1.0.9",
   "description": "轻量级UI组件库",
   "peerDependencies": {
     "react": "16.x"
@@ -12,12 +12,15 @@
   "dependencies": {
     "@babel/runtime": "^7.7.1",
     "@types/classnames": "^2.2.9",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-icons": "^3.0.0",
     "babel-plugin-import": "^1.12.2",
     "braft-editor": "^2.3.8",
     "classnames": "^2.2.6",
+    "docz-theme-default": "^1.2.0",
     "jsoneditor": "^8.1.0",
     "querystring": "^0.2.0",
-    "rc-notification": "^4.0.0-rc.1",
+    "rc-notification": "^4.0.0",
     "react-icons": "^3.9.0"
   },
   "files": [

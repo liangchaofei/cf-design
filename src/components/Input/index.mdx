@@ -1,0 +1,55 @@
+---
+name: Input
+route: /Input
+order: 8
+sidebar: true
+---
+
+import { Playground } from 'docz'
+import Input from './index.tsx'
+import Icon from '../Icon'
+
+
+## Input
+
+<Playground>
+    <Input /><br />
+    <Input style={{width: '400px', marginTop: '16px', marginBottom: '16px'}} /><br />
+    <Input style={{borderRadius: '4px'}} />
+</Playground>
+
+## Input带图标（搜索）
+
+<Playground>
+    <Input icon={<Icon type='FaSistrix' />} onIconClick={(v) => {alert(`输入的是: ${v}`)}} />
+</Playground>
+
+## 自动聚焦
+<Playground>
+    <Input autoFocus />
+</Playground>
+
+
+## 基本用法
+
+``` js
+import { Input } from 'cf-design'
+
+// 导入
+<Input />
+```
+
+## API文档
+|  参数  |  说明  |  类型  |  默认值  |
+|  ---   |  ---  |  ---  |  ---  |
+|  icon  |  是否带icon  |  boolean | false |
+|  defaultValue  |  输入框默认内容  |  string | 无 |
+|  id  |  输入框id  |  string |  |
+|  className  |  输入框的类名  |  string | 无 |
+|  style  |  输入框的样式  |  object |  |
+|  placeholder  |  输入框的占位符  |  string | 无 |
+|  type  |  输入框类型  |  string | text |
+|  autoFocus  |  输入框是否自动聚焦  |  boolean | false |
+|  value  |  输入框的值  |  string | 无 |
+|  onChange  |  输入框变化时的回调  |  (event) => void |  |
+|  onIconClick  |  当icon按钮点击时的回调  |  () => void |  |

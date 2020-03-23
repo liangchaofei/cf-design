@@ -11,6 +11,7 @@ const colorArr: any = {
 }
 
 interface IProps {
+    style: Object; //自定义样式
     color: string; // 自定义小圆点的颜色
     count: number; // 展示的数字
     dot: boolean; // 不展示数字,只展示一个小圆点
@@ -21,7 +22,7 @@ interface IProps {
     text: string; // 当设置status时状态点的文本
 }
 const Badge = React.memo((props: IProps) => {
-    const { color, count, dot, offset, overflowCount, showZero, status, text } = props;
+    const { color, count, dot, offset, overflowCount, showZero, status, text,style } = props;
     return (
         <div className="cfBadgeWrap">
             {
@@ -36,6 +37,7 @@ const Badge = React.memo((props: IProps) => {
                                 right: offset ? offset[0] + 'px' : '',
                                 top: offset ? offset[1] + 'px' : '',
                                 display: !showZero && !count ? 'none' : 'inline-block',
+                                ...style
                             }}
                         >
                             {!dot && (overflowCount && overflowCount < count ? `${overflowCount}+` : count)}

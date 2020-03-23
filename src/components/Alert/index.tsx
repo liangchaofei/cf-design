@@ -3,6 +3,7 @@ import './index.less'
 const { useState, useEffect } = React;
 
 interface IProps {
+    style: Object; // 自定义样式
     closable: boolean; // 是否显示关闭按钮，默认不显示
     closeText: string | any; // 自定义关闭按钮
     message: string; // 警告提示内容
@@ -14,12 +15,13 @@ interface IProps {
 
 const Alert = React.memo((props: IProps) => {
     const {
-        type,
+        type = 'warn',
         closable = false,
-        message = '内容',
+        message,
         description,
         closeText,
-        onClose
+        onClose,
+        style
     } = props;
     const [visible, setVisible] = useState<boolean>(true)
 
@@ -48,7 +50,7 @@ const Alert = React.memo((props: IProps) => {
         }
     }, [typeStyle])
     return (
-        <div className={`cfAlertBox ${typeStyle}`} style={{ display: visible ? "block" : "none" }}>
+        <div className={`cfAlertBox ${typeStyle}`} style={{ display: visible ? "block" : "none", ...style }}>
             <div className="cfAlertMsg">{message}</div>
             <div className="cfAlertHelp">{
                 description
