@@ -1,6 +1,6 @@
 {
   "name": "cf-design",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "轻量级UI组件库",
   "peerDependencies": {
     "react": "16.x"
